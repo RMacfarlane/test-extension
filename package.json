@@ -27,13 +27,11 @@
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
 		"test": "npm run compile && node ./node_modules/vscode/bin/test",
-		"postinstall": "npx vscode-dts master",
-		"postuninstall": "node ./out/uninstall.js"
+		"postinstall": "npx vscode-dts master"
 	},
 	"devDependencies": {
 		"typescript": "^3.9.6",
 		"tslint": "^5.12.1",
-		"@types/vscode": "^1.53.0",
 		"@types/node": "^10.12.21",
 		"@types/mocha": "^2.2.42"
 	},
